@@ -1,0 +1,40 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 29.01.2016 15:13:55
+
+newmtl wood
+	Ns 27.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.2610 0.2610 0.2610
+	Ke 0.0000 0.0000 0.0000
+	map_Ka E:\cizim\kaplama\ahsap\Arch_Interior_wood_wall.jpg
+	map_Kd E:\cizim\kaplama\ahsap\Arch_Interior_wood_wall.jpg
+
+newmtl platin
+	Ns 25.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.1686 0.1529 0.1529
+	Kd 0.1686 0.1529 0.1529
+	Ks 1.1365 1.1365 1.1365
+	Ke 0.0000 0.0000 0.0000
+
+newmtl Material__768
+	Ns 53.0000
+	Ni 1.5000
+	d 0.4600
+	Tr 0.5400
+	Tf 0.4600 0.4600 0.4600 
+	illum 2
+	Ka 0.8627 0.9922 0.9882
+	Kd 0.8627 0.9922 0.9882
+	Ks 1.0800 1.0800 1.0800
+	Ke 0.0000 0.0000 0.0000
