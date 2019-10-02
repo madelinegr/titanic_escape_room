@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.newunityproject2.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\VR\\Desktop\\Cintia.Araujo\\TestProject\\New Unity Project (2)\\actions.json",
+      "action_manifest_path": "C:\\Users\\VR\\Desktop\\titanic_escape_room\\actions.json",
       "strings": {
         "en_us": {
           "name": "New Unity Project (2) [Testing]"
