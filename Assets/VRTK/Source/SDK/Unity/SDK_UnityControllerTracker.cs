@@ -6,7 +6,7 @@ namespace VRTK
     using UnityEngine.XR;
 #else
     using UnityEngine.VR;
-    using XRNode = UnityEngine.VR.VRNode;
+    using XRNode = UnityEngine.XR.XRNode;
 #endif
 
     /// <summary>
@@ -18,7 +18,7 @@ namespace VRTK
     public class SDK_UnityControllerTracker : MonoBehaviour
     {
         [Tooltip("The Unity VRNode to track.")]
-        public XRNode nodeType;
+        public UnityEngine.XR.XRNode nodeType;
         [Tooltip("The unique index to assign to the controller.")]
         public uint index;
         [Tooltip("The Unity Input name for the trigger axis.")]
@@ -57,8 +57,8 @@ namespace VRTK
 
         protected virtual void FixedUpdate()
         {
-            transform.localPosition = InputTracking.GetLocalPosition(nodeType);
-            transform.localRotation = InputTracking.GetLocalRotation(nodeType);
+            transform.localPosition = UnityEngine.XR.InputTracking.GetLocalPosition(nodeType);
+            transform.localRotation = UnityEngine.XR.InputTracking.GetLocalRotation(nodeType);
         }
     }
 }

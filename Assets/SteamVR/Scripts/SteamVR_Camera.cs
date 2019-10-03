@@ -12,8 +12,8 @@ using Valve.VR;
 #if UNITY_2017_2_OR_NEWER
     using UnityEngine.XR;
 #else
-using XRSettings = UnityEngine.VR.VRSettings;
-using XRDevice = UnityEngine.VR.VRDevice;
+using XRSettings = UnityEngine.XR.XRSettings;
+using XRDevice = UnityEngine.XR.XRDevice;
 #endif
 
 namespace Valve.VR
@@ -49,8 +49,8 @@ namespace Valve.VR
 #else
         static public float sceneResolutionScale
         {
-            get { return XRSettings.renderScale; }
-            set { if (value == 0) return; XRSettings.renderScale = value; }
+            get { return UnityEngine.XR.XRSettings.eyeTextureResolutionScale; }
+            set { if (value == 0) return; UnityEngine.XR.XRSettings.eyeTextureResolutionScale = value; }
         }
 #endif
 

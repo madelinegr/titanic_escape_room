@@ -13,8 +13,8 @@ namespace VRTK
 #if UNITY_2017_2_OR_NEWER
     using UnityEngine.XR;
 #else
-    using XRSettings = UnityEngine.VR.VRSettings;
-    using XRStats = UnityEngine.VR.VRStats;
+    using XRSettings = UnityEngine.XR.XRSettings;
+    using XRStats = UnityEngine.XR.XRStats;
 #endif
 
     /// <summary>
@@ -336,7 +336,7 @@ namespace VRTK
             float gpuTimeLastFrame;
             return (XRStats.TryGetGPUTimeLastFrame(out gpuTimeLastFrame) ? gpuTimeLastFrame : 0f);
 #else
-            return XRStats.gpuTimeLastFrame;
+            return UnityEngine.XR.XRStats.gpuTimeLastFrame;
 #endif
         }
 
@@ -585,7 +585,7 @@ namespace VRTK
 #if UNITY_2017_2_OR_NEWER
             return XRSettings.eyeTextureResolutionScale;
 #else
-            return XRSettings.renderScale;
+            return UnityEngine.XR.XRSettings.eyeTextureResolutionScale;
 #endif
         }
 
@@ -598,7 +598,7 @@ namespace VRTK
 #if UNITY_2017_2_OR_NEWER
             XRSettings.eyeTextureResolutionScale = value;
 #else
-            XRSettings.renderScale = value;
+            UnityEngine.XR.XRSettings.eyeTextureResolutionScale = value;
 #endif
         }
 
