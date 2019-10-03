@@ -5,8 +5,8 @@
     using UnityEngine.XR;
 #else
     using UnityEngine.VR;
-    using XRSettings = UnityEngine.VR.VRSettings;
-    using XRDevice = UnityEngine.VR.VRDevice;
+    using XRSettings = UnityEngine.XR.XRSettings;
+    using XRDevice = UnityEngine.XR.XRDevice;
 #endif
 
     /// <summary>
@@ -40,14 +40,14 @@
 
         protected virtual void Update()
         {
-            if (XRDevice.GetTrackingSpaceType() != TrackingSpaceType.RoomScale && forceRoomScaleTracking)
+            if (UnityEngine.XR.XRDevice.GetTrackingSpaceType() != UnityEngine.XR.TrackingSpaceType.RoomScale && forceRoomScaleTracking)
             {
-                XRDevice.SetTrackingSpaceType(TrackingSpaceType.RoomScale);
+                UnityEngine.XR.XRDevice.SetTrackingSpaceType(UnityEngine.XR.TrackingSpaceType.RoomScale);
             }
 
-            if (XRDevice.GetTrackingSpaceType() != TrackingSpaceType.Stationary && !forceRoomScaleTracking)
+            if (UnityEngine.XR.XRDevice.GetTrackingSpaceType() != UnityEngine.XR.TrackingSpaceType.Stationary && !forceRoomScaleTracking)
             {
-                XRDevice.SetTrackingSpaceType(TrackingSpaceType.Stationary);
+                UnityEngine.XR.XRDevice.SetTrackingSpaceType(UnityEngine.XR.TrackingSpaceType.Stationary);
             }
 
         }
@@ -58,14 +58,14 @@
         /// <returns>Are the settings set.</returns>
         protected virtual bool CheckForMixedRealitySupport()
         {
-            if (XRSettings.enabled == false)
+            if (UnityEngine.XR.XRSettings.enabled == false)
             {
                 Debug.LogError("XRSettings are not enabled. Enable in PlayerSettings. Do not forget to add Windows Mixed Reality to Virtual Reality SDKs.");
                 return false;
             }
             else
             {
-                foreach (string device in XRSettings.supportedDevices)
+                foreach (string device in UnityEngine.XR.XRSettings.supportedDevices)
                 {
                     if (device.Equals("WindowsMR"))
                     {

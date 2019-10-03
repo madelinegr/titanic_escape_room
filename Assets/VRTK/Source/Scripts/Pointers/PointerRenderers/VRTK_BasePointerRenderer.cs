@@ -419,8 +419,8 @@ namespace VRTK
             {
                 if (destinationHit.transform != null)
                 {
-                    NavMeshHit hit;
-                    validNavMeshLocation = NavMesh.SamplePosition(destinationHit.point, out hit, navMeshData.distanceLimit, navMeshData.validAreas);
+                    UnityEngine.AI.NavMeshHit hit;
+                    validNavMeshLocation = UnityEngine.AI.NavMesh.SamplePosition(destinationHit.point, out hit, navMeshData.distanceLimit, navMeshData.validAreas);
                 }
             }
             else
