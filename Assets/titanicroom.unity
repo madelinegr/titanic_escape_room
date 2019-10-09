@@ -512,6 +512,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 285.2146, y: 19.90144, z: 177.75977}
   m_Center: {x: 0.44781494, y: -10.4038315, z: 0.024291992}
+--- !u!1 &377698068 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100004, guid: 5a4389e65c285e14188c82bf6321fda9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1551144267}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &377698069
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377698068}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 182.69281, y: 87.625374, z: 85.37147}
+  m_Center: {x: -0.000000011394415, y: 52.94576, z: 48.93864}
 --- !u!1 &400516934 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 5f204fbf7dc4a6f4ca4eadbbd5e61cfc,
@@ -641,7 +660,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1325395580}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &660278177
+--- !u!114 &660278176
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -676,7 +695,7 @@ MonoBehaviour:
     m_TypeName: Valve.VR.InteractionSystem.HandEvent, SteamVR, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   interactable: {fileID: 0}
---- !u!114 &660278178
+--- !u!114 &660278177
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -727,6 +746,21 @@ MonoBehaviour:
   handFollowTransform: 1
   highlightOnHover: 1
   hideHighlight: []
+--- !u!114 &660278178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660278175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 783750eec4c41da428b7651515146d14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocityAverageFrames: 5
+  angularVelocityAverageFrames: 11
+  estimateOnAwake: 0
 --- !u!54 &660278179
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -743,22 +777,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &660278180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 660278175}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 783750eec4c41da428b7651515146d14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocityAverageFrames: 5
-  angularVelocityAverageFrames: 11
-  estimateOnAwake: 0
---- !u!65 &660278181
+--- !u!65 &660278180
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1131,22 +1150,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &1049626979
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1049626977}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1001 &1134624919
 PrefabInstance:
   m_ObjectHideFlags: 0
