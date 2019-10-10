@@ -128,6 +128,8 @@
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\FallbackCameraController.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\GrabTypes.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\Hand.cs" />
+    <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\HandCollider.cs" />
+    <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\HandPhysics.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\HapticRack.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\HideOnHandFocusLost.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\HoverButton.cs" />
@@ -199,6 +201,7 @@
     <Compile Include="Assets\SteamVR\InteractionSystem\Samples\Scripts\TargetHitEffect.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Samples\Scripts\TargetMeasurement.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Samples\Squishy\SquishyToy.cs" />
+    <Compile Include="Assets\SteamVR\InteractionSystem\SnapTurn\SnapTurn.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Teleport\Scripts\AllowTeleportWhileAttachedToHand.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Teleport\Scripts\ChaperoneInfo.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Teleport\Scripts\IgnoreTeleportTrace.cs" />
@@ -484,22 +487,22 @@
       <HintPath>/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Valve.Newtonsoft.Json">
-      <HintPath>/Users/sevasimone/Documents/GitHub/titanic_escape_room/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+      <HintPath>/Users/cintia/Desktop/escape/titanic_escape_room/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
-      <HintPath>/Users/sevasimone/Documents/GitHub/titanic_escape_room/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
+      <HintPath>/Users/cintia/Desktop/escape/titanic_escape_room/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>/Users/sevasimone/Documents/GitHub/titanic_escape_room/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>/Users/cintia/Desktop/escape/titanic_escape_room/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>/Users/sevasimone/Documents/GitHub/titanic_escape_room/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>/Users/cintia/Desktop/escape/titanic_escape_room/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>/Users/sevasimone/Documents/GitHub/titanic_escape_room/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>/Users/cintia/Desktop/escape/titanic_escape_room/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
-      <HintPath>/Users/sevasimone/Documents/GitHub/titanic_escape_room/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
+      <HintPath>/Users/cintia/Desktop/escape/titanic_escape_room/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>/Applications/Unity/Hub/Editor/2018.3.9f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
