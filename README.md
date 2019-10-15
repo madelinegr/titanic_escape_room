@@ -6,6 +6,8 @@ To run the code:
 
 The Design branch contains changes such as new materials, assets and textures, and is merged to master from time to time. 
 
-The branch door_open is an experimental branch to test door opening interactions for the first puzzle in the room, and should not be merged to master.
+The branch door_open is an experimental branch to test door opening interactions for the first puzzle in the room, and should NOT be merged to master.
+
+The branch door_keypad contains the file door_key.unity, with a door, hinge and C# code, and a keypad for the first puzzle.
 
 Most interactions such as throwing and teleporting use the SteamVR plugin from Unity Asset Store.
