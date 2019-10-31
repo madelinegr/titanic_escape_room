@@ -9,7 +9,6 @@ public class DoorKey : MonoBehaviour
    public string tempInput;
    public bool onTrigger;
    public bool doorOpened;
-   public Transform doorHinge;
    public bool keypad;
    public bool openDoor=false;
    

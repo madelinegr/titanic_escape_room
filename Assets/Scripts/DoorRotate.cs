@@ -14,12 +14,18 @@ public class DoorRotate : MonoBehaviour
     public DoorKey Rotateclass;
     public float actualTime;
     public float count=0;
+    public bool WayRotation=false;
     // Start is called before the first frame update
     void Start()
     {
+        
         initRot= hinge;
         inity=hinge.rotation.y ;
-        targy=hinge.rotation.y +90;
+        if(WayRotation){
+            targy=hinge.rotation.y +90;
+        }else{
+            targy=hinge.rotation.y -90;
+        }
         
 
     }
