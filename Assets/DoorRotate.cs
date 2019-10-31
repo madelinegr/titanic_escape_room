@@ -11,6 +11,9 @@ public class DoorRotate : MonoBehaviour
     private bool state=false;
     private float targy;
     private float inity;
+    public DoorKey Rotateclass;
+    public float actualTime;
+    public float count=0;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,10 +34,14 @@ public class DoorRotate : MonoBehaviour
 
 
     void Update(){
-
-        transition= Mathf.LerpAngle(inity, targy, Time.time*speed);
-        initRot.Rotate(0, transition, 0);        
-        transform.rotation = Quaternion.Euler(transform.rotation.x , transform.rotation.y + transition,transform.rotation.z );        
+        if(Rotateclass.openDoor){
+            count+=0.01f;
+            actualTime=Time.time;
+            transition= Mathf.LerpAngle(inity, targy, (count)*speed);
+            initRot.Rotate(0, transition, 0);        
+            transform.rotation = Quaternion.Euler(transform.rotation.x , transform.rotation.y + transition,transform.rotation.z );        
+        }
+        Debug.Log(Time.time);
     }
 
    

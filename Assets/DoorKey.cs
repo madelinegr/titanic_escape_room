@@ -11,6 +11,7 @@ public class DoorKey : MonoBehaviour
    public bool doorOpened;
    public Transform doorHinge;
    public bool keypad;
+   public bool openDoor=false;
    
 
    /*private void Update() {
@@ -33,6 +34,12 @@ public class DoorKey : MonoBehaviour
             keypad=false;
         //}
        
+   }
+
+   private void Update() {
+       if(curPassword==input.ToString()){
+           openDoor=true;
+       }
    }
  
    void OnGUI()
