@@ -47,7 +47,7 @@ public class DoorRotate : MonoBehaviour
             initRot.Rotate(0, transition, 0);        
             transform.rotation = Quaternion.Euler(transform.rotation.x , transform.rotation.y + transition,transform.rotation.z );        
         }
-        Debug.Log(Time.time);
+        
     }
 
    

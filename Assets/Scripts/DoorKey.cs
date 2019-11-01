@@ -18,21 +18,13 @@ public class DoorKey : MonoBehaviour
    }*/
    void OnTriggerEnter(Collider other)
    {    
-       //if(other.tag=="MainCamera"){
-        
-            onTrigger = true;
-            
-       //}
-       
+        onTrigger = true;            
    }
    void OnTriggerExit(Collider other)
-   {    
-       //if(other.tag=="MainCamera"){
-            onTrigger = false;
-            tempInput = "";
-            keypad=false;
-        //}
-       
+   {
+        onTrigger = false;
+        tempInput = "";
+        keypad=false;           
    }
 
    private void Update() {

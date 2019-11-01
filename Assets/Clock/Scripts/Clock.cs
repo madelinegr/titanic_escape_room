@@ -6,9 +6,16 @@ public class Clock : MonoBehaviour {
 
 	//-- set start time 00:00
     public int minutes = 0;
-    public int hour = 0;
+    public int hour = 11;
 	public int seconds = 0;
-	public bool realTime=true;
+	private bool realTime=false;
+    private int FinalHour=12;
+    private int FinalMinutes=0;
+    private int FinalSeconds=0;
+    public bool GameOver=true;
+    
+    public Canvas canvas;
+    
 
     public GameObject pointerSeconds;
     public GameObject pointerMinutes;
@@ -22,6 +29,8 @@ public class Clock : MonoBehaviour {
 
 void Start() 
 {
+
+  
 	//-- set real time
 	if (realTime)
 	{
@@ -50,10 +59,22 @@ void Update()
                 hour++;
                 if(hour >= 24)
                     hour = 0;
+                
             }
         }
     }
+   
+   
+        
+   
+       if(hour>=12) {
+            canvas.enabled = true;
+            //paused=true;
+            Time.timeScale=0;
+                        
+       }
 
+   
  
 
     //-- calculate pointer angles
@@ -65,7 +86,8 @@ void Update()
     pointerSeconds.transform.localEulerAngles = new Vector3(0.0f, 0.0f, rotationSeconds);
     pointerMinutes.transform.localEulerAngles = new Vector3(0.0f, 0.0f, rotationMinutes);
     pointerHours.transform.localEulerAngles   = new Vector3(0.0f, 0.0f, rotationHours);
-    Debug.Log(hour + ":" + minutes + ":" + seconds);
+    
+    
     
 }
 }
