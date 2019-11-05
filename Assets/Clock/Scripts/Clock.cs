@@ -5,9 +5,9 @@ using System.Collections.Generic;
 public class Clock : MonoBehaviour {
 
 	//-- set start time 00:00
-    public int minutes = 0;
-    public int hour = 11;
-	public int seconds = 0;
+    private int minutes = 0;
+    private int hour = 11;
+	private int seconds = 0;
 	private bool realTime=false;
     private int FinalHour=12;
     private int FinalMinutes=0;
