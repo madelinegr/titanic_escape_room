@@ -1,7 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using Valve.VR.Extras;
+using Valve.VR.InteractionSystem;
+using Valve.VR;
+
 public class DoorKey : MonoBehaviour
 {
    // Start is called before the first frame update
@@ -14,11 +19,21 @@ public class DoorKey : MonoBehaviour
    public bool openDoor=false;
    public Text TemporalInput;
    public Canvas canvas;
-   
+   public SteamVR_Action_Boolean SphereOnOff;
+   public SteamVR_Input_Sources handType;
+   public GameObject Sphere;
+   public SteamVR_LaserPointer laserPointer;
 
+   void Awake(){
+   }    
    /*private void Update() {
        OnGUI();
    }*/
+   void Start()
+    {
+        
+    }
+   
    void OnTriggerStay(Collider other)
    {    
         onTrigger = true;            
@@ -29,15 +44,34 @@ public class DoorKey : MonoBehaviour
         tempInput = "";
         keypad=false;           
    }
+   
+    // public void PointerClick(object sender, PointerEventArgs e)
+    // {
+    //     Debug.Log("3333333333333333333333");
+    //     if(onTrigger){
+    //         Debug.Log("3333333333333333333333");
+    //     }
+        
+    //     if (EventSystem.current.currentSelectedGameObject != null)
+    //     {
+    //         Debug.Log("3333333333333333333333");
+    //         ExecuteEvents.Execute(EventSystem.current.currentSelectedGameObject, new PointerEventData(EventSystem.current), ExecuteEvents.submitHandler);
+    //         //var button = e.target.GetComponent<Button>();
+    //         //button.onClick.Invoke();
+    //     }
+    // }
 
+    
    private void Update() {
+       //mDevice = SteamVR_Controller.Input((int)mTrackeObject.index);
+
        if(curPassword==input.ToString()){
            openDoor=true;
        }
        
        TemporalInput.text=tempInput;
        
-       
+
        
        /*if(onTrigger )
        {
