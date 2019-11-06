@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 public class DoorKey : MonoBehaviour
 {
    // Start is called before the first frame update
@@ -11,6 +12,8 @@ public class DoorKey : MonoBehaviour
    public bool doorOpened;
    public bool keypad;
    public bool openDoor=false;
+   public Text TemporalInput;
+   public Canvas canvas;
    
 
    /*private void Update() {
@@ -31,9 +34,25 @@ public class DoorKey : MonoBehaviour
        if(curPassword==input.ToString()){
            openDoor=true;
        }
+       
+       TemporalInput.text=tempInput;
+       
+       
+       
+       /*if(onTrigger )
+       {
+           GUI.Box(new Rect(0, 0, 200, 25), "Press E to open keypad");
+           if (Input.GetKeyDown(KeyCode.E))
+           {
+               keypad = true;
+               onTrigger = false;
+           }
+       }*/
+
+
    }
  
-   void OnGUI()
+   /*void OnGUI()
    {
        if(onTrigger )
        {
@@ -99,7 +118,57 @@ public class DoorKey : MonoBehaviour
                input = input + tempInput;
            }
        }
-   }
+   }*/
+
+    public void Button1(){
+        tempInput = "1";
+        input = input + tempInput;
+    }
+
+    public void Button2(){
+        tempInput = "2";
+        input = input + tempInput;
+    }
+
+    public void Button3(){
+        tempInput = "3";
+        input = input + tempInput;
+    }
+
+    public void Button4(){
+        tempInput = "4";
+        input = input + tempInput;
+    }
+
+    public void Button5(){
+        tempInput = "5";
+        input = input + tempInput;
+    }
+
+    public void Button6(){
+        tempInput = "6";
+        input = input + tempInput;
+    }
+
+    public void Button7(){
+        tempInput = "7";
+        input = input + tempInput;
+    }
+
+    public void Button8(){
+        tempInput = "8";
+        input = input + tempInput;
+    }
+
+    public void Button9(){
+        tempInput = "9";
+        input = input + tempInput;
+    }
+
+    public void Button0(){
+        tempInput = "0";
+        input = input + tempInput;
+    }
 }
 /*
    void OnTriggerEnter(Collider other)
