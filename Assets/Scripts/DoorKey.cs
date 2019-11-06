@@ -24,6 +24,8 @@ public class DoorKey : MonoBehaviour
    public GameObject Sphere;
    public SteamVR_LaserPointer laserPointer;
 
+   public Animator animator;
+
    void Awake(){
    }    
    /*private void Update() {
@@ -45,32 +47,37 @@ public class DoorKey : MonoBehaviour
         keypad=false;           
    }
    
-    // public void PointerClick(object sender, PointerEventArgs e)
-    // {
-    //     Debug.Log("3333333333333333333333");
-    //     if(onTrigger){
-    //         Debug.Log("3333333333333333333333");
-    //     }
+     /*public void PointerClick(object sender, PointerEventArgs e)
+     {
+         Debug.Log("3333333333333333333333");
+         if(onTrigger){
+             Debug.Log("3333333333333333333333");
+         }
         
-    //     if (EventSystem.current.currentSelectedGameObject != null)
-    //     {
-    //         Debug.Log("3333333333333333333333");
-    //         ExecuteEvents.Execute(EventSystem.current.currentSelectedGameObject, new PointerEventData(EventSystem.current), ExecuteEvents.submitHandler);
-    //         //var button = e.target.GetComponent<Button>();
-    //         //button.onClick.Invoke();
-    //     }
-    // }
+         if (EventSystem.current.currentSelectedGameObject != null)
+         {
+             Debug.Log("3333333333333333333333");
+             ExecuteEvents.Execute(EventSystem.current.currentSelectedGameObject, new PointerEventData(EventSystem.current), ExecuteEvents.submitHandler);
+             //var button = e.target.GetComponent<Button>();
+             //button.onClick.Invoke();
+         }
+     }*/
 
     
    private void Update() {
        //mDevice = SteamVR_Controller.Input((int)mTrackeObject.index);
-
+        
        if(curPassword==input.ToString()){
            openDoor=true;
        }
        
        TemporalInput.text=tempInput;
-       
+       if (Input.GetKeyDown(KeyCode.E) && onTrigger){
+           animator.SetBool("Active", true);
+       }
+       if(onTrigger==false){
+           animator.SetBool("Active", false);
+       }
 
        
        /*if(onTrigger )
