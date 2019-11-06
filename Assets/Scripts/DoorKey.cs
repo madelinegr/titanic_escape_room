@@ -16,7 +16,7 @@ public class DoorKey : MonoBehaviour
    /*private void Update() {
        OnGUI();
    }*/
-   void OnTriggerEnter(Collider other)
+   void OnTriggerStay(Collider other)
    {    
         onTrigger = true;            
    }

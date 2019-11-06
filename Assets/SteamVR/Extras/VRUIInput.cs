@@ -12,6 +12,12 @@ public class VRUIInput : MonoBehaviour
     //private SteamVR_LaserPointer laserPointer;
     //private SteamVR_TrackedController trackedController;
 
+    void Awake()
+    {
+        // laserPointer.PointerIn += PointerInside;
+        // laserPointer.PointerOut += PointerOutside;
+        laserPointer.PointerClick += PointerClick;
+    }
     private void OnEnable()
     {
         laserPointer = GetComponent<SteamVR_LaserPointer>();
@@ -31,7 +37,10 @@ public class VRUIInput : MonoBehaviour
 
      public void PointerClick(object sender, PointerEventArgs e)
     {
-         if (EventSystem.current.currentSelectedGameObject != null)
+            var button = e.target.GetComponent<Button>();
+            button.onClick.Invoke();
+        
+        if (EventSystem.current.currentSelectedGameObject != null)
         {
             ExecuteEvents.Execute(EventSystem.current.currentSelectedGameObject, new PointerEventData(EventSystem.current), ExecuteEvents.submitHandler);
         }
