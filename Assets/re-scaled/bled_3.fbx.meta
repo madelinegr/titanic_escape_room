@@ -1,8 +1,48 @@
 fileFormatVersion: 2
 guid: f7e5d632b2df7684a99b024a137710a7
 ModelImporter:
-  serializedVersion: 26
-  internalIDToNameTable: []
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Old_wood_bed
+    100004: Old_wood_bed.001
+    100006: Old_wood_bed.002
+    100008: Old_wood_bed.003
+    100010: Old_wood_bed.004
+    100012: Old_wood_bed.005
+    100014: Old_wood_bed.006
+    400000: //RootNode
+    400002: Old_wood_bed
+    400004: Old_wood_bed.001
+    400006: Old_wood_bed.002
+    400008: Old_wood_bed.003
+    400010: Old_wood_bed.004
+    400012: Old_wood_bed.005
+    400014: Old_wood_bed.006
+    2100000: lambert74SG.001
+    2100002: lambert76SG.001
+    2100004: lambert75SG.001
+    2300000: Old_wood_bed
+    2300002: Old_wood_bed.001
+    2300004: Old_wood_bed.002
+    2300006: Old_wood_bed.003
+    2300008: Old_wood_bed.004
+    2300010: Old_wood_bed.005
+    2300012: Old_wood_bed.006
+    3300000: Old_wood_bed
+    3300002: Old_wood_bed.001
+    3300004: Old_wood_bed.002
+    3300006: Old_wood_bed.003
+    3300008: Old_wood_bed.004
+    3300010: Old_wood_bed.005
+    3300012: Old_wood_bed.006
+    4300000: Old_wood_bed
+    4300002: Old_wood_bed.001
+    4300004: Old_wood_bed.002
+    4300006: Old_wood_bed.003
+    4300008: Old_wood_bed.004
+    4300010: Old_wood_bed.005
+    4300012: Old_wood_bed.006
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -38,7 +78,6 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
-    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -46,19 +85,18 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
+    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
-    skinWeightsMode: 0
-    maxBonesPerVertex: 4
-    minBoneWeight: 0.001
-    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -67,11 +105,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips: []
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    serializedVersion: 3
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -81,7 +118,6 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
