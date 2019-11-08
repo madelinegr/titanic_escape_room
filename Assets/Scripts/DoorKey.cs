@@ -15,7 +15,7 @@ public class DoorKey : MonoBehaviour
    public string curPassword = "1234";
    public string input;
    public string tempInput;
-   public bool onTrigger;
+   public bool onTrigger=false;
    public bool doorOpened;
    public bool keypad;
    public bool openDoor=false;
@@ -27,6 +27,8 @@ public class DoorKey : MonoBehaviour
     public event PointerEventHandler PointerClick;
 
    public Animator animator;
+   public GameObject gamepad;
+   public bool clickactivatecanvas=false;
 
    void Awake(){
        PointerEventArgs argsClick = new PointerEventArgs();
@@ -37,20 +39,26 @@ public class DoorKey : MonoBehaviour
    }*/
    void Start()
     {
+        onTrigger=false;
+        clickactivatecanvas=false;
         //pose = this.GetComponent<SteamVR_Behaviour_Pose>();
     }
     public virtual void OnPointerClick(PointerEventArgs e)
         {
-                Debug.Log("click in doorkey");
+            clickactivatecanvas=true;
+            Debug.Log("click in doorkey");
             if (PointerClick != null)
                 PointerClick(this, e);
         }
    void OnTriggerStay(Collider other)
    {    
-        onTrigger = true;            
+        onTrigger = true;
+        
+        Debug.Log("Inside trigger");            
    }
    void OnTriggerExit(Collider other)
    {
+       clickactivatecanvas=false;
         onTrigger = false;
         tempInput = "";
         keypad=false;           
@@ -71,13 +79,22 @@ public class DoorKey : MonoBehaviour
         }
        
        TemporalInput.text=tempInput;
-       if (Input.GetKeyDown(KeyCode.E)){
-           animator.SetBool("Active", true);
+       if (onTrigger && clickactivatecanvas){
+           gamepad.SetActive(true);
+           
+           //animator.SetBool("Active", true);
            Debug.Log("3333333333333333333333333333");
+       }else{
+           //clickactivatecanvas=false;
+           gamepad.SetActive(false);
+           //animator.SetBool("Active", false);
        }
     //    if(onTrigger==false){
+    //        clickactivatecanvas=false;
+    //        gamepad.SetActive(false);
     //        animator.SetBool("Active", false);
     //    }
+       
        
        /*if(onTrigger )
        {

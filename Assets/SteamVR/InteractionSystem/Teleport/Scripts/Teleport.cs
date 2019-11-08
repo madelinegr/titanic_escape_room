@@ -14,7 +14,7 @@ namespace Valve.VR.InteractionSystem
 	public class Teleport : MonoBehaviour
     {
         public SteamVR_Action_Boolean teleportAction = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("Teleport");
-
+		public Collider colliderKeypad;
         public LayerMask traceLayerMask;
 		public LayerMask floorFixupTraceLayerMask;
 		public float floorFixupMaximumTraceDistance = 1.0f;
@@ -273,6 +273,9 @@ namespace Valve.VR.InteractionSystem
 					{
 						//Hide the pointer
 						HidePointer();
+						//Show collider when pointes is hidden
+						colliderKeypad.enabled=true;
+						Debug.Log("Show Collider");
 					}
 					else if ( newPointerHand != null )
 					{
@@ -284,6 +287,9 @@ namespace Valve.VR.InteractionSystem
 
 			if ( visible )
 			{
+				//Hidden Colider when teleport is using
+				colliderKeypad.enabled=false;
+				Debug.Log("Hidden Collider");
 				UpdatePointer();
 
 				if ( meshFading )
@@ -294,6 +300,7 @@ namespace Valve.VR.InteractionSystem
 				if ( onActivateObjectTransform.gameObject.activeSelf && Time.time - pointerShowStartTime > activateObjectTime )
 				{
 					onActivateObjectTransform.gameObject.SetActive( false );
+					
 				}
 			}
 			else
@@ -357,6 +364,7 @@ namespace Valve.VR.InteractionSystem
 					pointerLineRenderer.endColor = pointerLockedColor;
 #endif
 					destinationReticleTransform.gameObject.SetActive( false );
+					
 				}
 				else
 				{
@@ -368,8 +376,9 @@ namespace Valve.VR.InteractionSystem
 					pointerLineRenderer.endColor = pointerValidColor;
 #endif
 					destinationReticleTransform.gameObject.SetActive( hitTeleportMarker.showReticle );
+					
 				}
-
+				
 				offsetReticleTransform.gameObject.SetActive( true );
 
 				invalidReticleTransform.gameObject.SetActive( false );
@@ -665,6 +674,7 @@ namespace Valve.VR.InteractionSystem
 			if ( onActivateObjectTransform.gameObject.activeSelf )
 			{
 				onActivateObjectTransform.gameObject.SetActive( false );
+				//Debug.Log("-------------------------------");
 			}
 			onDeactivateObjectTransform.gameObject.SetActive( true );
 
@@ -702,7 +712,7 @@ namespace Valve.VR.InteractionSystem
 					onDeactivateObjectTransform.gameObject.SetActive( false );
 				}
 				onActivateObjectTransform.gameObject.SetActive( true );
-
+				Debug.Log("******************");
 				loopingAudioSource.clip = pointerLoopSound;
 				loopingAudioSource.loop = true;
 				loopingAudioSource.Play();
