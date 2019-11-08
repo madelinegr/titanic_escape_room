@@ -1,8 +1,143 @@
 fileFormatVersion: 2
 guid: e642eb4ac4df24409befcc98a8fa01bc
 ModelImporter:
-  serializedVersion: 26
-  internalIDToNameTable: []
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Line03
+    100004: Line06
+    100006: Line12
+    100008: Plane01
+    100010: Rectangle01
+    100012: Rectangle02
+    100014: Rectangle03
+    100016: Rectangle04
+    100018: Rectangle05
+    100020: Rectangle06
+    100022: Rectangle07
+    100024: Rectangle24
+    100026: Rectangle25
+    100028: Rectangle26
+    100030: Rectangle27
+    100032: Rectangle28
+    100034: Rectangle29
+    100036: Rectangle30
+    100038: Rectangle31
+    100040: Rectangle32
+    100042: Sphere01
+    100044: Sphere02
+    400000: //RootNode
+    400002: Line03
+    400004: Line06
+    400006: Line12
+    400008: Plane01
+    400010: Rectangle01
+    400012: Rectangle02
+    400014: Rectangle03
+    400016: Rectangle04
+    400018: Rectangle05
+    400020: Rectangle06
+    400022: Rectangle07
+    400024: Rectangle24
+    400026: Rectangle25
+    400028: Rectangle26
+    400030: Rectangle27
+    400032: Rectangle28
+    400034: Rectangle29
+    400036: Rectangle30
+    400038: Rectangle31
+    400040: Rectangle32
+    400042: Sphere01
+    400044: Sphere02
+    2100000: Line03Mat
+    2100002: Line06Mat
+    2100004: Line12Mat
+    2100006: Plane01Mat
+    2100008: Rectangle01Mat
+    2100010: Rectangle02Mat
+    2100012: Rectangle03Mat
+    2100014: Rectangle04Mat
+    2100016: Rectangle05Mat
+    2100018: Rectangle06Mat
+    2100020: Rectangle07Mat
+    2100022: Rectangle24Mat
+    2100024: Rectangle25Mat
+    2100026: Rectangle26Mat
+    2100028: Rectangle27Mat
+    2100030: Rectangle28Mat
+    2100032: Rectangle29Mat
+    2100034: Rectangle30Mat
+    2100036: Rectangle31Mat
+    2100038: Rectangle32Mat
+    2100040: Sphere01Mat
+    2100042: Sphere02Mat
+    2300000: Line03
+    2300002: Line06
+    2300004: Line12
+    2300006: Plane01
+    2300008: Rectangle01
+    2300010: Rectangle02
+    2300012: Rectangle03
+    2300014: Rectangle04
+    2300016: Rectangle05
+    2300018: Rectangle06
+    2300020: Rectangle07
+    2300022: Rectangle24
+    2300024: Rectangle25
+    2300026: Rectangle26
+    2300028: Rectangle27
+    2300030: Rectangle28
+    2300032: Rectangle29
+    2300034: Rectangle30
+    2300036: Rectangle31
+    2300038: Rectangle32
+    2300040: Sphere01
+    2300042: Sphere02
+    3300000: Line03
+    3300002: Line06
+    3300004: Line12
+    3300006: Plane01
+    3300008: Rectangle01
+    3300010: Rectangle02
+    3300012: Rectangle03
+    3300014: Rectangle04
+    3300016: Rectangle05
+    3300018: Rectangle06
+    3300020: Rectangle07
+    3300022: Rectangle24
+    3300024: Rectangle25
+    3300026: Rectangle26
+    3300028: Rectangle27
+    3300030: Rectangle28
+    3300032: Rectangle29
+    3300034: Rectangle30
+    3300036: Rectangle31
+    3300038: Rectangle32
+    3300040: Sphere01
+    3300042: Sphere02
+    4300000: Line03
+    4300002: Line06
+    4300004: Line12
+    4300006: Plane01
+    4300008: Rectangle01
+    4300010: Rectangle02
+    4300012: Rectangle03
+    4300014: Rectangle04
+    4300016: Rectangle05
+    4300018: Rectangle06
+    4300020: Rectangle07
+    4300022: Rectangle24
+    4300024: Rectangle25
+    4300026: Rectangle26
+    4300028: Rectangle27
+    4300030: Rectangle28
+    4300032: Rectangle29
+    4300034: Rectangle30
+    4300036: Rectangle31
+    4300038: Rectangle32
+    4300040: Sphere01
+    4300042: Sphere02
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -38,7 +173,6 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
-    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -46,19 +180,18 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
+    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
-    skinWeightsMode: 0
-    maxBonesPerVertex: 4
-    minBoneWeight: 0.001
-    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -67,11 +200,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips: []
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    serializedVersion: 3
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -81,7 +213,6 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
