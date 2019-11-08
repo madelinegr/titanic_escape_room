@@ -80,6 +80,7 @@ namespace Valve.VR.Extras
         {
             if (PointerClick != null)
                 PointerClick(this, e);
+                //Debug.Log("3333333333333333333333333333");
         }
 
         public virtual void OnPointerOut(PointerEventArgs e)

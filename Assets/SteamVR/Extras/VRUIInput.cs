@@ -8,10 +8,12 @@ using Valve.VR.Extras;
 public class VRUIInput : MonoBehaviour
 {
     public SteamVR_LaserPointer laserPointer;
+    public bool onTrigger;
 
     //private SteamVR_LaserPointer laserPointer;
     //private SteamVR_TrackedController trackedController;
-
+    
+ 
     void Awake()
     {
         // laserPointer.PointerIn += PointerInside;
@@ -34,15 +36,14 @@ public class VRUIInput : MonoBehaviour
         // trackedController.TriggerClicked -= HandleTriggerClicked;
         // trackedController.TriggerClicked += HandleTriggerClicked;
     }
-
-     public void PointerClick(object sender, PointerEventArgs e)
+    public void PointerClick(object sender, PointerEventArgs e)
     {
-            var button = e.target.GetComponent<Button>();
-            button.onClick.Invoke();
         
         if (EventSystem.current.currentSelectedGameObject != null)
         {
             ExecuteEvents.Execute(EventSystem.current.currentSelectedGameObject, new PointerEventData(EventSystem.current), ExecuteEvents.submitHandler);
+            //var button = e.target.GetComponent<Button>();
+            //button.onClick.Invoke();
         }
     }
 
