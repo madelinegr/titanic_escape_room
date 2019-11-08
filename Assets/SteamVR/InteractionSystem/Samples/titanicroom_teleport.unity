@@ -886,6 +886,22 @@ PrefabInstance:
       propertyPath: teleportAction.actionPath
       value: /actions/default/in/Teleport
       objectReference: {fileID: 0}
+    - target: {fileID: 11445746, guid: 7a135b1a2cb9c8f488d4dd00c55ab283, type: 3}
+      propertyPath: colliderKeypad
+      value: 
+      objectReference: {fileID: 1111197004}
+    - target: {fileID: 11445746, guid: 7a135b1a2cb9c8f488d4dd00c55ab283, type: 3}
+      propertyPath: pointerValidColor.r
+      value: 0.10980391
+      objectReference: {fileID: 0}
+    - target: {fileID: 11445746, guid: 7a135b1a2cb9c8f488d4dd00c55ab283, type: 3}
+      propertyPath: pointerValidColor.g
+      value: 0.770727
+      objectReference: {fileID: 0}
+    - target: {fileID: 11445746, guid: 7a135b1a2cb9c8f488d4dd00c55ab283, type: 3}
+      propertyPath: pointerValidColor.b
+      value: 0.8901961
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a135b1a2cb9c8f488d4dd00c55ab283, type: 3}
 --- !u!4 &904148194 stripped
@@ -1344,6 +1360,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50dce5f21532aa12a84acb6b85692030, type: 3}
+--- !u!65 &1111197004 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 5025566578356222235, guid: c1ce69c842af6c7289c8545526f62c42,
+    type: 3}
+  m_PrefabInstance: {fileID: 4779003269533871607}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1120660471 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 428928, guid: 73ac470d3d909d645a6c89a4664b6849,
@@ -1673,7 +1695,7 @@ PrefabInstance:
     - target: {fileID: 2030944012293802445, guid: 4c6a1b2d69be29f069a7b98bac201db6,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3791615383341294141, guid: 4c6a1b2d69be29f069a7b98bac201db6,
         type: 3}
@@ -1693,7 +1715,7 @@ PrefabInstance:
     - target: {fileID: 3993555848053780934, guid: 4c6a1b2d69be29f069a7b98bac201db6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.7972016
+      value: 0.47
       objectReference: {fileID: 0}
     - target: {fileID: 3993555848053780934, guid: 4c6a1b2d69be29f069a7b98bac201db6,
         type: 3}
@@ -1743,7 +1765,7 @@ PrefabInstance:
     - target: {fileID: 3993555848053780934, guid: 4c6a1b2d69be29f069a7b98bac201db6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 2.805
+      value: 1.486
       objectReference: {fileID: 0}
     - target: {fileID: 3993555848053780934, guid: 4c6a1b2d69be29f069a7b98bac201db6,
         type: 3}
@@ -7961,7 +7983,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.32
+      value: 4.471
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7969,7 +7991,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.37
+      value: 5.252
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalRotation.x
@@ -8035,7 +8057,7 @@ MonoBehaviour:
   active: 1
   color: {r: 0, g: 0, b: 0, a: 0}
   thickness: 0.002
-  clickColor: {r: 0, g: 1, b: 0, a: 1}
+  clickColor: {r: 0, g: 1, b: 0.357018, a: 1}
   holder: {fileID: 0}
   pointer: {fileID: 0}
   addRigidBody: 0
@@ -17571,6 +17593,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyPad
       objectReference: {fileID: 0}
+    - target: {fileID: 5025566578356222235, guid: c1ce69c842af6c7289c8545526f62c42,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 2.937058
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025566578356222235, guid: c1ce69c842af6c7289c8545526f62c42,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.5342908
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025566578356222235, guid: c1ce69c842af6c7289c8545526f62c42,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 3.4825037
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025566578356222235, guid: c1ce69c842af6c7289c8545526f62c42,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.111310124
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025566578356222235, guid: c1ce69c842af6c7289c8545526f62c42,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5025566578356222234, guid: c1ce69c842af6c7289c8545526f62c42,
         type: 3}
       propertyPath: onHandClick.m_PersistentCalls.m_Calls.Array.size
@@ -17638,6 +17685,11 @@ PrefabInstance:
       propertyPath: gamepad
       value: 
       objectReference: {fileID: 1895020651}
+    - target: {fileID: 5025566578356222234, guid: c1ce69c842af6c7289c8545526f62c42,
+        type: 3}
+      propertyPath: righthandpointer
+      value: 
+      objectReference: {fileID: 1983763721}
     - target: {fileID: 5025566578356222213, guid: c1ce69c842af6c7289c8545526f62c42,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17706,31 +17758,6 @@ PrefabInstance:
     - target: {fileID: 5025566578356222213, guid: c1ce69c842af6c7289c8545526f62c42,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5025566578356222235, guid: c1ce69c842af6c7289c8545526f62c42,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 2.937058
-      objectReference: {fileID: 0}
-    - target: {fileID: 5025566578356222235, guid: c1ce69c842af6c7289c8545526f62c42,
-        type: 3}
-      propertyPath: m_Center.z
-      value: 0.5342908
-      objectReference: {fileID: 0}
-    - target: {fileID: 5025566578356222235, guid: c1ce69c842af6c7289c8545526f62c42,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 3.4825037
-      objectReference: {fileID: 0}
-    - target: {fileID: 5025566578356222235, guid: c1ce69c842af6c7289c8545526f62c42,
-        type: 3}
-      propertyPath: m_Center.x
-      value: 0.111310124
-      objectReference: {fileID: 0}
-    - target: {fileID: 5025566578356222235, guid: c1ce69c842af6c7289c8545526f62c42,
-        type: 3}
-      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6675965255345652600, guid: c1ce69c842af6c7289c8545526f62c42,

@@ -18518,6 +18518,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyPad
       objectReference: {fileID: 0}
+    - target: {fileID: 5025566578356222235, guid: c1ce69c842af6c7289c8545526f62c42,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 2.937058
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025566578356222235, guid: c1ce69c842af6c7289c8545526f62c42,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.5342908
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025566578356222235, guid: c1ce69c842af6c7289c8545526f62c42,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 3.4825037
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025566578356222235, guid: c1ce69c842af6c7289c8545526f62c42,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.111310124
+      objectReference: {fileID: 0}
     - target: {fileID: 5025566578356222234, guid: c1ce69c842af6c7289c8545526f62c42,
         type: 3}
       propertyPath: onHandClick.m_PersistentCalls.m_Calls.Array.size
@@ -18657,26 +18677,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5025566578356222235, guid: c1ce69c842af6c7289c8545526f62c42,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 2.937058
-      objectReference: {fileID: 0}
-    - target: {fileID: 5025566578356222235, guid: c1ce69c842af6c7289c8545526f62c42,
-        type: 3}
-      propertyPath: m_Center.z
-      value: 0.5342908
-      objectReference: {fileID: 0}
-    - target: {fileID: 5025566578356222235, guid: c1ce69c842af6c7289c8545526f62c42,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 3.4825037
-      objectReference: {fileID: 0}
-    - target: {fileID: 5025566578356222235, guid: c1ce69c842af6c7289c8545526f62c42,
-        type: 3}
-      propertyPath: m_Center.x
-      value: 0.111310124
       objectReference: {fileID: 0}
     - target: {fileID: 6675965255345652600, guid: c1ce69c842af6c7289c8545526f62c42,
         type: 3}

@@ -9,8 +9,8 @@ using Valve.VR;
 
 public class DoorKey : MonoBehaviour
 {
-    public SteamVR_Behaviour_Pose pose;
-    public SteamVR_Action_Boolean interactWithUI = SteamVR_Input.GetBooleanAction("InteractUI");
+   public SteamVR_Behaviour_Pose pose;
+   public SteamVR_Action_Boolean interactWithUI = SteamVR_Input.GetBooleanAction("InteractUI");
    // Start is called before the first frame update
    public string curPassword = "1234";
    public string input;
@@ -24,7 +24,8 @@ public class DoorKey : MonoBehaviour
    public SteamVR_Action_Boolean SphereOnOff;
    public SteamVR_Input_Sources handType;
    public GameObject Sphere;
-    public event PointerEventHandler PointerClick;
+   public event PointerEventHandler PointerClick;
+   public GameObject righthandpointer;
 
    public Animator animator;
    public GameObject gamepad;
@@ -41,8 +42,30 @@ public class DoorKey : MonoBehaviour
     {
         onTrigger=false;
         clickactivatecanvas=false;
+        righthandpointer.GetComponent<SteamVR_LaserPointer>().enabled = false;
         //pose = this.GetComponent<SteamVR_Behaviour_Pose>();
     }
+    void OnTriggerEnter(Collider other)
+   {    
+        clickactivatecanvas=false;
+        righthandpointer.GetComponent<SteamVR_LaserPointer>().enabled = false;
+        righthandpointer.GetComponent<SteamVR_LaserPointer>().pointer.SetActive(true);
+   }
+   void OnTriggerStay(Collider other)
+   {    
+        onTrigger = true;
+        righthandpointer.GetComponent<SteamVR_LaserPointer>().enabled = true;
+        Debug.Log("Inside trigger");            
+   }
+   void OnTriggerExit(Collider other)
+   {
+       righthandpointer.GetComponent<SteamVR_LaserPointer>().enabled = false;
+       clickactivatecanvas=false;
+        onTrigger = false;
+        tempInput = "";
+        keypad=false;       
+        righthandpointer.GetComponent<SteamVR_LaserPointer>().pointer.SetActive(false);
+   }
     public virtual void OnPointerClick(PointerEventArgs e)
         {
             clickactivatecanvas=true;
@@ -50,19 +73,6 @@ public class DoorKey : MonoBehaviour
             if (PointerClick != null)
                 PointerClick(this, e);
         }
-   void OnTriggerStay(Collider other)
-   {    
-        onTrigger = true;
-        
-        Debug.Log("Inside trigger");            
-   }
-   void OnTriggerExit(Collider other)
-   {
-       clickactivatecanvas=false;
-        onTrigger = false;
-        tempInput = "";
-        keypad=false;           
-   }
    private void Update() {
        if (interactWithUI.GetStateUp(pose.inputSource))
             {
@@ -86,6 +96,7 @@ public class DoorKey : MonoBehaviour
            Debug.Log("3333333333333333333333333333");
        }else{
            //clickactivatecanvas=false;
+           
            gamepad.SetActive(false);
            //animator.SetBool("Active", false);
        }
