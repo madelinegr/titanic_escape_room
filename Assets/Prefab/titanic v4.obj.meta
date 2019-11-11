@@ -1,22 +1,8 @@
 fileFormatVersion: 2
-guid: 53a2883969e99935e86ad0678366f488
+guid: 5d24959a2ec04bf5794c041ceecb227d
 ModelImporter:
-<<<<<<< HEAD
   serializedVersion: 26
   internalIDToNameTable: []
-=======
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: default
-    400000: //RootNode
-    400002: default
-    2100000: defaultMat
-    2300000: default
-    3300000: default
-    4300000: default
-    2186277476908879412: ImportLogs
->>>>>>> c2173bad51e4df1fae94c01d740813d64ee78205
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -52,10 +38,7 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
-<<<<<<< HEAD
     sortHierarchyByName: 1
-=======
->>>>>>> c2173bad51e4df1fae94c01d740813d64ee78205
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -84,10 +67,7 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-<<<<<<< HEAD
   referencedClips: []
-=======
->>>>>>> c2173bad51e4df1fae94c01d740813d64ee78205
   importAnimation: 1
   copyAvatar: 0
   humanDescription:

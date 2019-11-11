@@ -1,8 +1,24 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/assets/Stairs 1.obj.meta
 guid: 68c244a567466b5c891969ed4925b1d2
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
+=======
+guid: 08628273f82394c7cad6aca4aafb5f15
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Stair_A1
+    100002: //RootNode
+    400000: Stair_A1
+    400002: //RootNode
+    2100000: Stair_A1Mat
+    2300000: Stair_A1
+    3300000: Stair_A1
+    4300000: Stair_A1
+    2186277476908879412: ImportLogs
+>>>>>>> c2173bad51e4df1fae94c01d740813d64ee78205:Assets/assets/Stairs 1.obj.meta
   externalObjects: {}
   materials:
     importMaterials: 1
