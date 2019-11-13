@@ -1,11 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Assets/assets/Stairs 1.obj.meta
 guid: 68c244a567466b5c891969ed4925b1d2
-ModelImporter:
-  serializedVersion: 26
-  internalIDToNameTable: []
-=======
-guid: 08628273f82394c7cad6aca4aafb5f15
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -17,8 +11,8 @@ ModelImporter:
     2300000: Stair_A1
     3300000: Stair_A1
     4300000: Stair_A1
+    9500000: //RootNode
     2186277476908879412: ImportLogs
->>>>>>> c2173bad51e4df1fae94c01d740813d64ee78205:Assets/assets/Stairs 1.obj.meta
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -47,14 +41,13 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 0
+    isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
-    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -62,19 +55,18 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
+    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
-    skinWeightsMode: 0
-    maxBonesPerVertex: 4
-    minBoneWeight: 0.001
-    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -83,11 +75,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips: []
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    serializedVersion: 3
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -97,13 +88,12 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
