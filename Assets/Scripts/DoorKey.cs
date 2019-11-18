@@ -12,7 +12,7 @@ public class DoorKey : MonoBehaviour
    public SteamVR_Behaviour_Pose pose;
    public SteamVR_Action_Boolean interactWithUI = SteamVR_Input.GetBooleanAction("InteractUI");
    // Start is called before the first frame update
-   public string curPassword = "1234";
+   public string curPassword = "1835";
    public string input;
    public string tempInput;
    public bool onTrigger=false;
