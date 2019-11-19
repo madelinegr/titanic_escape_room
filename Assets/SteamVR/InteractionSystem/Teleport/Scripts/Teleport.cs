@@ -15,6 +15,7 @@ namespace Valve.VR.InteractionSystem
     {
         public SteamVR_Action_Boolean teleportAction = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("Teleport");
 		public Collider colliderKeypad;
+		public GameObject[] scale;
         public LayerMask traceLayerMask;
 		public LayerMask floorFixupTraceLayerMask;
 		public float floorFixupMaximumTraceDistance = 1.0f;
@@ -276,6 +277,9 @@ namespace Valve.VR.InteractionSystem
 						//Show collider when pointes is hidden
 						colliderKeypad.enabled=true;
 						Debug.Log("Show Collider");
+						for(int i=0; i<scale.Length; i++){
+							scale[i].SetActive(true);
+						}
 					}
 					else if ( newPointerHand != null )
 					{
@@ -290,6 +294,9 @@ namespace Valve.VR.InteractionSystem
 				//Hidden Colider when teleport is using
 				colliderKeypad.enabled=false;
 				Debug.Log("Hidden Collider");
+				for(int i=0; i<scale.Length; i++){
+						scale[i].SetActive(false);
+					}
 				UpdatePointer();
 
 				if ( meshFading )

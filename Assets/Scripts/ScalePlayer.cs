@@ -9,9 +9,10 @@ public class ScalePlayer : MonoBehaviour
    public float scale=1;
    public float speed;
    public float count=0;
-   public GameObject NextColliders;
-   public GameObject BackColliders;
-   public GameObject ThisColliders;
+   private bool DecreaseScale=true;
+   //public GameObject NextColliders;
+   //public GameObject BackColliders;
+   //public GameObject ThisColliders;
    private float FinalScale;
    private float scaleTarget;
    // Start is called before the first frame update
@@ -28,6 +29,8 @@ public class ScalePlayer : MonoBehaviour
            scaleTarget=scale;
            count=0;
        }
+
+
        if(state && count<=1){
            count+=0.01f;
        }
@@ -35,20 +38,47 @@ public class ScalePlayer : MonoBehaviour
         player.transform.localScale= new Vector3(FinalScale,FinalScale,FinalScale);
    }
    
-      void OnTriggerEnter(Collider col){
-        if(col.tag == "Player"){
-        state=true;
-        scaleTarget=scale;
-        count=0;
-        BackColliders.SetActive(true);
-        NextColliders.SetActive(true);
-        ThisColliders.SetActive(false);
-        }  
+    void OnTriggerEnter(Collider col){
+            if(col.tag == "Player"){
+            state=true;
+            scaleTarget=scale;
+            DecreaseScale=false;
+            //count=0;
+            // BackColliders.SetActive(true);
+            // NextColliders.SetActive(true);
+            // ThisColliders.SetActive(false);
+        } 
+   }
+
+ void OnTriggerExit(Collider col){
         
-
-      
+            
+            //count=0;
+            // BackColliders.SetActive(true);
+            // NextColliders.SetActive(true);
+            // ThisColliders.SetActive(false);
+         
    }
-   void OntriggerExit(Collider col){
 
+   public void NormalScale(){
+       Debug.Log("Bottle");
+       /* state=true;
+        scaleTarget=1;*/
+        //player.transform.localScale= new Vector3(1,1,1);
+        //count=0;
    }
+
+   void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag =="Bottle" && DecreaseScale){
+            state=true;
+            scaleTarget=2;
+            count=0;
+            player.transform.localScale= new Vector3(1,1,1);  
+            Debug.Log("funca");
+            DecreaseScale=false;
+        }else{
+            Debug.Log("no Funca");
+        }
+    }
 }
