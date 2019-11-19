@@ -23,7 +23,7 @@ public class DoorKey : MonoBehaviour
    public Canvas canvas;
    public SteamVR_Action_Boolean SphereOnOff;
    public SteamVR_Input_Sources handType;
-   public GameObject Sphere;
+   //public GameObject Sphere;
    public event PointerEventHandler PointerClick;
    public GameObject righthandpointer;
 
