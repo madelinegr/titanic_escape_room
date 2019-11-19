@@ -43,6 +43,7 @@ public class ScalePlayer : MonoBehaviour
             state=true;
             scaleTarget=scale;
             DecreaseScale=false;
+            Debug.Log("77777777777777777777777777777777777777777777777777777777777777777");
             //count=0;
             // BackColliders.SetActive(true);
             // NextColliders.SetActive(true);
@@ -53,7 +54,7 @@ public class ScalePlayer : MonoBehaviour
  void OnTriggerExit(Collider col){
         
             
-            //count=0;
+        count=0;
             // BackColliders.SetActive(true);
             // NextColliders.SetActive(true);
             // ThisColliders.SetActive(false);
