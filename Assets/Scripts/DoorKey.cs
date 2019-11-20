@@ -86,6 +86,7 @@ public class DoorKey : MonoBehaviour
         }
         if(curPassword==input.ToString()){
            openDoor=true;
+           canvas.enabled=false;
         }
        
        TemporalInput.text=tempInput;
@@ -167,5 +168,11 @@ public class DoorKey : MonoBehaviour
     public void Button0(){
         tempInput = "0";
         input = input + tempInput;
+    }
+
+      public void Reset(){
+        input = "";
+        tempInput="";
+        TemporalInput.text="";
     }
 }
