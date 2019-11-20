@@ -6,19 +6,19 @@ public class ScalePlayer : MonoBehaviour
 {
    public GameObject player;
    public bool state=false;
-   public float scale=1;
+   public float scale;
    public float speed;
    public float count=0;
+   
    private bool DecreaseScale=true;
-   //public GameObject NextColliders;
-   //public GameObject BackColliders;
-   //public GameObject ThisColliders;
-   private float FinalScale;
+
+
+   public float FinalScale;
    private float scaleTarget;
    // Start is called before the first frame update
    void Start()
    {
-        // player.transform.localScale= new Vector3(5,5,5);
+        scaleTarget=scale;
    }
    // Update is called once per frame
    void Update()
@@ -34,17 +34,26 @@ public class ScalePlayer : MonoBehaviour
        if(state && count<=1){
            count+=0.01f;
        }
+
+       //if(player.transform.localScale.x<scale){
        FinalScale=Mathf.Lerp(player.transform.localScale.x,scaleTarget, count*speed);
         player.transform.localScale= new Vector3(FinalScale,FinalScale,FinalScale);
+        /*}else//if(player.transform.localScale.x>scaleTarget)
+        {
+            FinalScale=Mathf.Lerp(scaleTarget,player.transform.localScale.x , count*speed);
+        player.transform.localScale= new Vector3(FinalScale,FinalScale,FinalScale);
+        }*/
    }
    
     void OnTriggerEnter(Collider col){
-            if(col.tag == "Player"){
+            if(col.tag == "Player" ){
             state=true;
-            scaleTarget=scale;
+            //scaleTarget=scale;
             DecreaseScale=false;
             Debug.Log("77777777777777777777777777777777777777777777777777777777777777777");
-            //count=0;
+            count=0;
+            
+            
             // BackColliders.SetActive(true);
             // NextColliders.SetActive(true);
             // ThisColliders.SetActive(false);
@@ -53,7 +62,8 @@ public class ScalePlayer : MonoBehaviour
 
  void OnTriggerExit(Collider col){
         
-            
+        
+        state=false;
         count=0;
             // BackColliders.SetActive(true);
             // NextColliders.SetActive(true);
