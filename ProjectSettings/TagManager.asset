@@ -9,6 +9,7 @@ TagManager:
   - FxTemporaire
   - TeleportIgnore
   - test
+  - Bottle
   layers:
   - Default
   - TransparentFX

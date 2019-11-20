@@ -23,7 +23,7 @@ public class DoorKey : MonoBehaviour
    public Canvas canvas;
    public SteamVR_Action_Boolean SphereOnOff;
    public SteamVR_Input_Sources handType;
-   public GameObject Sphere;
+   //public GameObject Sphere;
    public event PointerEventHandler PointerClick;
    public GameObject righthandpointer;
 
@@ -86,6 +86,7 @@ public class DoorKey : MonoBehaviour
         }
         if(curPassword==input.ToString()){
            openDoor=true;
+           canvas.enabled=false;
         }
        
        TemporalInput.text=tempInput;
@@ -167,5 +168,11 @@ public class DoorKey : MonoBehaviour
     public void Button0(){
         tempInput = "0";
         input = input + tempInput;
+    }
+
+      public void Reset(){
+        input = "";
+        tempInput="";
+        TemporalInput.text="";
     }
 }
